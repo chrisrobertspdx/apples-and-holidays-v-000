@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.keys.each{|k,v|
     puts "#{k}:"
     holiday_hash[k].each {|k2,v2|
-      puts "  #{k2}: #{v2.split(', ')}"
+      puts "  #{k2.capitalize}: #{v2.split(', ').capitalize}"
     }
   }
 
